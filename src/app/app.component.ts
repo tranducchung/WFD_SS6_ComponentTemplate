@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'countdown-timer';
+  countdownMsg = '';
+  finishCountdown() {
+    this.countdownMsg = 'Finished';
+  }
+  onRateChange(value) {
+    console.log(value);
+  }
 }
